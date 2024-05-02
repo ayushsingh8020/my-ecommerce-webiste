@@ -1,0 +1,33 @@
+<app-navbar (searchItem)="searchItem($event)"></app-navbar>
+
+
+<h1>Kids Wear</h1>
+<hr>
+
+<main>
+  <div class="container">
+    <!-- product-box -->
+    <div class="product-box" *ngFor="let product of products">
+      <!--product's image-box -->
+      <div class="image-box">
+        <img [src]="product.images[0]" alt="" />
+      </div>
+
+      <div class="content">
+        <p class="brand">{{ product.brand }}</p>
+        <h2>{{ product.title }}</h2>
+        <p class="description">{{ product.description }}</p>
+        <p class="stock">Only {{ product.stock }} unit are left</p>
+        <p class="limited-deal"> -10% Limited time deal</p>
+        <p class="price">
+          <sup>  {{ product.price }}</sup>
+        </p>
+        <button class="card-add" (click)="addtocart(product)" routerLink="/add-to-cart" >Add to Cart <fa-icon [icon]="AddtoCart"></fa-icon>  </button>
+        <button class="buy-now"  routerLink=""> Buy Now  <fa-icon [icon]="BuyNow"></fa-icon> </button>
+   <p class="delivery-instruction">
+     FREE Delivery over ₹499. Fulfilled by A to Z Collection.
+  </p>
+        </div>
+    </div>
+  </div>
+</main>

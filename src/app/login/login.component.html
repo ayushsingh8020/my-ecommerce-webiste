@@ -1,0 +1,49 @@
+<div class="form-area" >
+
+  <h1>Welcome back</h1>
+      <img src="../../assets/images/Tablet login-pana.svg" alt="" class="image1">
+      <!-- <img src=" alt="" class="image2"> -->
+
+      <form #userLogin="ngForm" (ngSubmit)="Login(userLogin.value)" class="common-form">
+
+  <br><br><br>
+  <label class="label-class1">Email:</label>
+  <input type="text"
+  class="form-input"
+  placeholder="Enter User Email"
+  name="email"
+  #email="ngModel"
+  ngModel
+  required
+  pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+  >
+
+  <div class="alert" *ngIf="email.invalid && email.touched">
+    Enter User Email
+  </div>
+
+  <br><br><br><br><br><br>
+  <label class="label-class2">Password:</label>
+  <input type="password"
+  class="form-input"
+  placeholder="Enter User Password"
+  name="password"
+  #password="ngModel"
+  ngModel
+  required
+  >
+  <div class="alert" *ngIf="password.invalid && password.touched">
+    Enter User Password
+  </div>
+  <br><br><br>
+  <a routerLink="/forgot-password" class="btn2" > Forgot  Password?</a>
+
+  <br><br><br>
+
+
+  <button class="btn" type="submit"   [disabled]="userLogin.invalid" (click)="login(email.value, password.value)"Login>Login</button>
+  <p class="para1">Don't have an account? Create a Account <a routerLink = "/user-sign-up-page">Sign Up </a></p>
+</form>
+
+</div>
+

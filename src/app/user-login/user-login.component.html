@@ -1,0 +1,60 @@
+  <div class="form-area" >
+
+  <h1>User Sign Up</h1>
+      <img src="../../assets/images/Sign up-cuate.svg" alt="" class="image1">
+      <!-- <img src="../../assets/images/blob (5).svg" alt="" class="image2"> -->
+
+      <form #userSignUp="ngForm" (ngSubmit)="SignUp(userSignUp.value)" class="common-form">
+<label class="label-class" >Name:</label>
+<br>
+          <input type="text"
+
+          class="form-input"
+
+          placeholder="Enter User Name "
+          name="name"
+          #name="ngModel"
+          ngModel
+          required
+          >
+
+  <div class="alert" *ngIf="name.invalid && name.touched">
+    Enter User Name
+  </div>
+  <br><br><br><br>
+  <label class="label-class2" >Email:</label><br>
+  <input type="text"
+  class="form-input"
+  placeholder="Enter User Email"
+  name="email"
+  #email="ngModel"
+  ngModel
+  required
+  pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+  >
+
+  <div class="alert" *ngIf="email.invalid && email.touched">
+    Enter User Email
+  </div>
+
+  <br><br><br><br>
+  <label class="label-class3" >Password:</label><br>
+  <input type="password"
+  class="form-input"
+  placeholder="Enter User Password"
+  name="password"
+  #password="ngModel"
+  ngModel
+  required
+  >
+  <div class="alert" *ngIf="password.invalid && password.touched">
+Enter Your Password
+  </div>
+  <br><br><br><br>
+
+  <button class="btn" type="submit"   [disabled]="userSignUp.invalid" (click)="signup(name.value,email.value, password.value)"SignUp>SignUp</button>
+  <p class="para1">If you already have an account? <a routerLink="/log">Login </a></p>
+</form>
+
+</div>
+

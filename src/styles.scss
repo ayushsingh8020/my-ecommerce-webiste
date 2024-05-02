@@ -1,0 +1,92 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+*{
+  margin: 0;
+  padding: 0;
+scroll-behavior: smooth;
+}
+
+ $customFont: "Montserrat", sans-serif;
+
+
+
+
+
+// //  <!-- <div class="dropdown-menu">
+// //  <button class="menu-btn">Category</button>
+// //  <div class="menu-content">
+// //    <a class="links-hidden" routerLink="/mens-wear">Men's Wear</a>
+// //      <a class="links-hidden" routerLink="/womens-wear">Women's Wear </a>
+// //      <a class="links-hidden" routerLink="/kids-wear">Kid's Wear</a>
+// //      <a class="links-hidden" href="#">Electronics</a>
+// //      <a class="links-hidden" href="#">Sports</a>
+// //      <a class="links-hidden" href="#">Decoration</a>
+// //      <a class="links-hidden" href="#">Gadgtes</a>
+// //    </div>
+// //  </div> -->
+
+
+
+
+
+
+//    ul{
+//     display: inline;
+
+//    li{
+//      display: inline-block;
+//      margin: 0 1rem;
+//      color:#000;
+//    }
+//    }
+
+
+//  .dropdown-menu {
+//      position: relative;
+//      display: inline-block;
+
+//  .menu-btn{
+//    padding: 0 2rem;
+//    height: 3rem;
+//    font-size:1rem;
+//    background: transparent;
+//    border: none;
+//  }
+//  }
+
+//   .menu-content {
+//      display: none;
+//      position: absolute;
+//      background:linear-gradient(20deg , rgb(33, 105, 163), rgba(223, 131, 235, 0.664));
+//      min-width: 160px;
+//      opacity: .9;
+//      z-index: 1;
+//   }
+//   nav{
+//      background-color: #0e0f0f;
+//   }
+//   .links,.links-hidden{
+//      display: inline-block;
+//      color: rgb(255, 255, 255);
+//      padding: 12px 16px;
+//      text-decoration: none;
+//      font-size: 18px;
+//     font-weight: bold;
+//   }
+//   .links-hidden{
+//      display: block;
+//   }
+//   .links{
+//      display: inline-block;
+//   }
+//   .links-hidden:hover,.links:hover {
+//      background-color: rgba(0, 0, 0, 0.938);
+//   }
+//   .dropdown-menu:hover .menu-content {
+//      display: block;
+//   }
+//   .dropdown-menu:hover .menu-btn {
+//      background:linear-gradient(20deg , rgb(187, 222, 251), rgba(223, 131, 235, 0.664));
+//     background: transparent;
+//   }

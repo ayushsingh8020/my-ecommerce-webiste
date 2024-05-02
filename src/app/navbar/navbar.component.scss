@@ -1,0 +1,249 @@
+@import '/src/styles.scss';
+
+
+header{
+  height: 4rem;
+  font-family: $customFont;
+  background: linear-gradient(30deg, rgb(236, 64, 122), rgb(129, 212, 250));
+
+.logo{
+  height: 100%;
+ display: inline;
+  overflow: hidden;
+  cursor: pointer;
+
+  img{
+    height: 100%;
+  }
+}
+
+  .options{
+    display: inline;
+    float: right;
+    cursor: pointer;
+
+  input{
+    height: 3rem;
+    border: none;
+    padding:0 2rem;
+    border-radius:1rem;
+    box-sizing: border-box;
+    margin-top: .5rem;
+  }
+
+  ul{
+    display: inline;
+  li{
+    display: inline-block;
+    margin: 0 8rem;
+    color:#000;
+    .icon{
+      padding-top: 3px;
+      font-size:1.4rem;
+      padding:0 2rem;
+      transition: 1000ms;
+  }
+
+   .icon2{
+    transition: 1000ms;
+   }
+}
+.icon:hover{
+  margin-top: -20px;
+  overflow: hidden;
+}
+
+.icon2:hover{
+  margin-top: -20px;
+  overflow: hidden;
+}
+  }
+
+  .dropdown-menu {
+    position: relative;
+    display: inline-block;
+
+.menu-btn{
+  font-family: $customFont;
+  padding: 0 2rem;
+  height: 3rem;
+  font-size:1rem;
+  background: transparent;
+  border: none;
+
+}
+  }
+ .menu-content {
+    display: none;
+    position: absolute;
+    background:linear-gradient(20deg , rgb(33, 105, 163), rgba(223, 131, 235, 0.664));
+    min-width: 160px;
+    opacity: .9;
+    z-index: 1;
+ }
+ nav{
+    background-color: #0e0f0f;
+ }
+ .links,.links-hidden{
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+ }
+ .links-hidden{
+    display: block;
+ }
+ .links{
+    display: inline-block;
+ }
+ .links-hidden:hover,.links:hover {
+    background-color: rgba(0, 0, 0, 0.938);
+ }
+ .dropdown-menu:hover .menu-content {
+    display: block;
+ }
+ .dropdown-menu:hover .menu-btn {
+    background:linear-gradient(20deg , rgb(187, 222, 251), rgba(223, 131, 235, 0.664));
+    background: transparent;
+ }
+}
+
+}
+
+
+@media only screen and (max-width: 768px){
+
+  header{
+    height: 4rem;
+    font-family: $customFont;
+    background:  linear-gradient(30deg, rgb(236, 64, 122), rgb(129, 212, 250));
+
+ .logo{
+  height: 100%;
+  display: inline;
+  overflow: hidden;
+  cursor: pointer;
+
+  img{
+    height: 100%;
+  }
+}
+
+ .options{
+  padding: relative;
+
+  display: inline;
+  float: right;
+  cursor: pointer;
+
+ input{
+
+  position: absolute;
+  height: 3rem;
+  box-sizing: border-box;
+  border: none;
+  padding:0 .2rem;
+  z-index: 1;
+  top:-0.1rem;
+  padding-left: 1rem;
+ left:7rem;
+ }
+
+ ul{
+  position: relative;
+ display: inline;
+
+ .products{
+ position: absolute;
+ left:-6rem;
+ top:0.1rem;
+ z-index: 1;
+ box-sizing: border-box;
+ overflow: hidden;
+
+ }
+
+
+ li{
+  position: relative;
+  display: inline-block;
+  margin: 0 1.5rem;
+  color: #000;
+
+  .icon{
+    padding-top: 3px;
+    font-size:1.4rem;
+    padding:0 2rem;
+    transition: 1000ms;
+}
+
+ .icon2{
+  transition: 1000ms;
+ }
+}
+.icon:hover{
+margin-top: -20px;
+overflow: hidden;
+}
+
+.icon2:hover{
+margin-top: -20px;
+overflow: hidden;
+}
+}
+
+.dropdown-menu {
+  position: relative;
+  display: inline-block;
+
+.menu-btn{
+font-family: $customFont;
+padding: 0 2rem;
+height: 3rem;
+font-size:1rem;
+background: transparent;
+border: none;
+
+}
+}
+.menu-content {
+  display: none;
+  position: absolute;
+  background:linear-gradient(20deg , rgb(33, 105, 163), rgba(223, 131, 235, 0.664));
+  min-width: 160px;
+  opacity: .9;
+  z-index: 1;
+}
+nav{
+  background-color: #0e0f0f;
+}
+.links,.links-hidden{
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+.links-hidden{
+  display: block;
+}
+.links{
+  display: inline-block;
+}
+.links-hidden:hover,.links:hover {
+  background-color: rgba(0, 0, 0, 0.938);
+}
+.dropdown-menu:hover .menu-content {
+  display: block;
+}
+.dropdown-menu:hover .menu-btn {
+  background:linear-gradient(20deg , rgb(187, 222, 251), rgba(223, 131, 235, 0.664));
+  background: transparent;
+}
+}
+
+}
+}

@@ -1,0 +1,58 @@
+<app-navbar (searchItem)="search($event)"></app-navbar>
+
+
+<main>
+<div class="all-Products">
+<ul class="option1" >
+  <li class="devices"></li>
+  <p class="para1">Electronics Device</p>
+  <li routerLink="/mens-wear" class="clothes"></li>
+  <p routerLink="/mens-wear" class="para2">Clothes </p>
+  <li class="decoration"></li>
+  <p class="para3">Decoration Items</p>
+  <li class="perfumes"></li>
+  <p class="para4">Perfumes & Dews</p>
+  <li class="snacks"></li>
+  <p class="para5">Snacks & Beverages</p>
+  <li class=groceries></li>
+  <p class="para6">Grocery & daily needs</p>
+  <li class=gift></li>
+  <p class="para7">Gift Items</p>
+  <li class="wrist-watch"></li>
+  <p class="para8">Wrist Watches</p>
+  <li class="stationary"></li>
+  <p class="para9">Stationary Items</p>
+  <li class="footwear"></li>
+  <p class="para10">Footwear</p>
+</ul>
+
+</div>
+
+
+   <div class="container">
+    <!-- product-box -->
+    <div class="product-box" *ngFor="let product of products">
+      <!-- product's image-box -->
+      <div class="image-box">
+        <img [src]="product.images[0]" alt="" />
+      </div>
+
+      <div class="content">
+
+        <p class="brand">{{ product.brand }}</p>
+        <h2 style="text-overflow: ellipsis; overflow:hidden; white-space:nowrap; max-width: 100ch;">{{product.title}}</h2>
+        <p class="description" style="text-overflow: ellipsis; overflow:hidden; white-space:nowrap; max-width: 100ch;">{{product.description}}</p>
+        <p class="limited-deal"> -10% Limited time deal</p>
+        <p class="price">
+          <sup>  {{ product.price | currency : "INR" }}</sup>
+        </p>
+
+          <button class="card-add" (click)="addtocart(product)" routerLink="/add-to-cart" >Add to Cart <fa-icon [icon]="AddtoCart">  </fa-icon>   </button>
+         <button class="buy-now"  routerLink=""> Buy Now  <fa-icon [icon]="BuyNow"></fa-icon> </button>
+   <p class="delivery-instruction">
+     FREE Delivery over ₹499. Fulfilled by A to Z Collection.
+  </p>
+</div>
+  </div>
+  </div>
+</main>

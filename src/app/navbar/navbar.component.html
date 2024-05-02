@@ -1,0 +1,33 @@
+<header>
+
+  <div routerLink="/" class="logo">
+      <img src="../../assets/logo/240_F_249506275_NgCaZJhqAMKAMpdv7W55p4CdOcDXVZyj.jpg" alt="">
+  </div>
+
+  <div class="options">
+      <input type="text" (keyup)="search($event.target)" placeholder="search your item here !">
+ <!-- <fa-icon class="searchBar" [icon]="faSearch"></fa-icon> -->
+      <ul>
+          <li routerLink="/" class="products">Products</li>
+
+<div class="dropdown-menu">
+  <button class="menu-btn">Category</button>
+  <div class="menu-content">
+    <a class="links-hidden" routerLink="/mens-wear">Men's Wear</a>
+      <a class="links-hidden" routerLink="/womens-wear">Women's Wear </a>
+      <a class="links-hidden" routerLink="/kids-wear">Kid's Wear</a>
+      <a class="links-hidden" href="#">Electronics</a>
+      <a class="links-hidden" href="#">Sports</a>
+      <a class="links-hidden" href="#">Decoration</a>
+     <a class="links-hidden" href="#">Gadgtes</a>
+     <a class="links-hidden" href="#">Footwear</a>
+    </div>
+  </div>
+
+          <li class="icon"  routerLink="/add-to-cart"> <fa-icon [icon]="faCart"></fa-icon> ({{totalItem}})</li>
+
+ <li class="icon2"   routerLink="/user-sign-up-page"> <fa-icon [icon]="faUser"></fa-icon> </li>
+        </ul>
+  </div>
+
+</header>

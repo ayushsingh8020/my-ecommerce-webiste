@@ -1,0 +1,821 @@
+@import '/src/styles.scss';
+
+
+main{
+.all-Products{
+  position: relative;
+  height: 10rem;
+  width: 100%;
+  background: #999;
+  overflow: hidden;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  .option1{
+    display:inline-flex;
+    gap:4rem;
+    padding-right:25rem;
+    padding-top:.3rem;
+    float: right;
+
+
+
+
+ .devices{
+  overflow: hidden;
+  position: absolute;
+  font-family: $customFont;
+  background-image: url('https://cdn-icons-png.flaticon.com/128/262/262209.png');
+  background-position: center;
+  background-size: cover;
+  background-size: cover;
+  padding:.8rem;
+  padding-top:.9rem;
+  font-size: .7rem;
+  text-align: center;
+  height:60px;
+  width: 60px;
+  border-radius: 50%;
+  margin-left:-70rem;
+  display: inline-block;
+
+}
+
+ .clothes{
+  overflow: hidden;
+  position:absolute;
+  font-family: $customFont;
+  // background: rgb(255, 115, 80);
+  background-image: url('https://i.pinimg.com/236x/4e/c5/27/4ec52738182d255d2c203af65bb46c69.jpg');
+  background-position:center;
+  background-size: cover;
+  padding:.8rem;
+  padding-top:1rem;
+  font-size: .7rem;
+  text-align: center;
+  margin-left: -0.5rem;
+  height:60px;
+  width:60px;
+  border-radius: 50%;
+  color: #fff;
+  margin-left:-60rem;
+  display: inline-flex;
+}
+
+.decoration{
+
+  overflow: hidden;
+  position:absolute;
+  text-decoration: none;
+  font-family: $customFont;
+  // background: rgb(255, 115, 80);
+  background-image: url('https://t3.ftcdn.net/jpg/05/17/34/72/360_F_517347264_lT1PNQKwZWGnWMo9g5IkxKXYSY6VUJnX.jpg');
+  background-position:center;
+  background-size: cover;
+  padding:.8rem;
+  padding-top:1rem;
+  font-size: .7rem;
+  text-align: center;
+  margin-left: -0.5rem;
+  height:60px;
+  width:60px;
+  border-radius: 50%;
+  color: #fff;
+  margin-left:-50rem;
+  display: inline-flex;
+}
+
+.perfumes{
+  overflow: hidden;
+  position: absolute;
+  box-sizing: border-box;
+  background-image:url('https://images.bewakoof.com/image/content/2023/05/16114423/image-119.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+height:90px;
+width:90px;
+padding:.9rem;
+  padding-top:1rem;
+  // margin-top:2px;
+  font-size: .7rem;
+  text-align: center;
+  margin-left: -0.5rem;
+  border-radius: 50%;
+  color: #fff;
+  margin-left:-40rem;
+  display: inline-flex;
+border-radius: 50%;
+}
+
+.snacks{
+position: absolute;
+overflow: hidden;
+box-sizing: border-box;
+background-image: url('https://i.pinimg.com/236x/b7/67/68/b7676807cd0b07bb6bc65e79fe998995.jpg');
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+
+height: 90px;
+width: 90px;
+border-radius: 50%;
+border: none;
+padding: .8rem;
+display: inline-flex;
+padding-top: 1rem;
+margin-left: -30rem;
+}
+
+.groceries{
+  position: absolute;
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 90px;
+  width: 90px;
+  background-image: url('https://i.pinimg.com/236x/31/db/b4/31dbb447b58e35ba6889c4a700bdfcfe.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding:.8rem;
+  border-radius: 50%;
+  border: none;
+  padding-top: 1rem;
+  margin-left: -20rem;
+}
+
+.gift{
+  position: absolute;
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 90px;
+  width: 90px;
+  background-image: url('https://i.pinimg.com/236x/30/ec/05/30ec05daa2dbee7206835794f3065ac3.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding:.8rem;
+  border-radius: 50%;
+  border: none;
+  padding-top: 1rem;
+  margin-left:-10rem;
+
+}
+
+.wrist-watch{
+  position: absolute;
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 90px;
+  width: 90px;
+  text-decoration: none;
+  list-style-type: none;
+  background-image: url('https://i.pinimg.com/736x/1e/fb/f4/1efbf4d23939c2bc900e2dfba11c1430.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding:.8rem;
+  border-radius: 50%;
+  border: none;
+  padding-top: 1rem;
+  margin-left:-auto;
+}
+
+.stationary{
+  position: absolute;
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 90px;
+  width: 90px;
+  background-image: url('https://i.pinimg.com/564x/44/53/30/44533087f070b3967d41eed318e47899.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding:.8rem;
+  padding-top:1rem;
+  border-radius: 50%;
+  border: none;
+  padding-top: 1rem;
+  margin-left:10rem;
+}
+
+.footwear{
+  position: absolute;
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 90px;
+  width: 90px;
+  background-image: url('https://i.pinimg.com/564x/ca/7f/2f/ca7f2f28db5cb465f6e30f29d40b7507.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding:.8rem;
+  padding-top:1rem;
+  border-radius: 50%;
+  border: none;
+  padding-top: 1rem;
+  margin-left:18rem;
+}
+.para1{
+  position: absolute;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-top:7rem;
+  margin-left: -71rem;
+  font-size:.8rem;
+  font-family: $customFont;
+  transition: 700ms;
+}
+
+.para1:hover{
+  color: blue;
+}
+
+.para2{
+  position: absolute;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-top:7rem;
+  margin-left: -59rem;
+  font-size:.8rem;
+  font-family: $customFont;
+  transition: 700ms;
+}
+
+.para2:hover{
+  color: blue;
+}
+
+
+.para3{
+  position: absolute;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-top:7rem;
+  margin-left: -51rem;
+  font-size:.8rem;
+  font-family: $customFont;
+  transition: 700ms;
+}
+
+
+.para3:hover{
+  color: blue;
+}
+
+.para4{
+  position: absolute;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-top:7rem;
+  margin-left: -41rem;
+  font-size:.8rem;
+  font-family: $customFont;
+  transition: 700ms;
+}
+
+
+.para4:hover{
+  color: blue;
+}
+
+.para5{
+  position: absolute;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-top:7rem;
+  margin-left: -31rem;
+  font-size:.8rem;
+  font-family: $customFont;
+  transition: 700ms;
+}
+
+
+.para5:hover{
+  color: blue;
+}
+
+.para6{
+  position: absolute;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-top:7rem;
+  margin-left: -21rem;
+  font-size:.8rem;
+  font-family: $customFont;
+  transition: 700ms;
+}
+
+
+.para6:hover{
+  color: blue;
+}
+
+.para7{
+  position: absolute;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-top:7rem;
+  margin-left: -9rem;
+  font-size:.8rem;
+  font-family: $customFont;
+  transition: 700ms;
+}
+
+.para7:hover{
+  color: blue;
+}
+
+.para8{
+  position: absolute;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-top:7rem;
+  margin-left: -1rem;
+  font-size:.8rem;
+  font-family: $customFont;
+  transition: 700ms;
+}
+
+.para8:hover{
+  color: blue;
+}
+
+.para9{
+  position: absolute;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-top:7rem;
+  margin-left:10rem;
+  font-size:.8rem;
+  font-family: $customFont;
+  transition: 700ms;
+}
+
+.para9:hover{
+  color: blue;
+}
+
+.para10{
+  position: absolute;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-top:7rem;
+  margin-left:19rem;
+  font-size:.8rem;
+  font-family: $customFont;
+  transition: 700ms;
+}
+
+.para10:hover{
+  color: blue;
+}
+
+}
+
+
+}
+  .container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding:1rem;
+    align-items: center;
+   justify-content: center;
+    column-gap:1rem;
+     row-gap: 1rem;
+
+
+     .product-box{
+       width:20rem;
+       background: rgb(245, 245, 245);
+       border-radius: 1rem;
+       padding: 1rem;
+       box-sizing:border-box;
+      }
+
+      .image-box{
+        height: 15rem;
+        overflow: hidden;
+ background: #999;
+ border-radius: .4rem;
+
+ img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+  }
+}
+
+.content{
+  margin: 1rem;
+  padding: 1rem;
+  .brand{
+    font-size:1rem;
+    font-family: $customFont;
+    font-weight: 700;
+  }
+  h2{
+padding-top: 1rem;
+    font-family: $customFont;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1rem;
+  }
+  .price, sup{
+    font-family: $customFont;
+    padding-top: 1rem;
+    // border-radius: 8px;
+    // background:rgb(117, 117, 117);
+    text-align: center;
+    font-size:1rem;
+
+  }
+
+
+.description{
+  padding-top:.5rem;
+  font-size: .9rem;
+  font-family: $customFont;
+}
+
+.stock{
+  padding-top: 1rem;
+  font-family: $customFont;
+}
+
+.limited-deal{
+  background:rgb(198, 40, 40);
+ padding:.4rem;
+ margin-top: 1rem;
+ width:60%;
+ margin-left: 2.5rem;
+text-align: center;
+ border-radius:5px;
+ color: #fff;
+ font-size:1rem;
+font-family: $customFont;
+}
+
+// .cart-add{
+//   padding:.8rem 4rem;
+//   margin-left:2rem;
+//   border-radius:1.5rem;
+//   border: none;
+//   background: rgb(255, 193, 7);
+//   cursor:pointer;
+// }
+
+.card-add{
+ padding: .5rem 2rem;
+ margin-left:3rem;
+ flex-wrap: wrap;
+ flex-basis: 1;
+ border-radius:1.5rem;
+ border: none;
+ background: rgb(255, 193, 7);
+cursor:pointer;
+}
+
+.buy-now{
+  margin-top: 1rem;
+  padding:.5rem 2.5rem;
+  margin-left:3rem;
+  border-radius:1.5rem;
+  border: none;
+  background: rgb(255, 193, 7);
+  cursor:pointer;
+}
+
+.delivery-instruction {
+margin-top:1.5rem;
+text-align: center;
+font-family: $customFont;
+font-size: 1.1rem;
+}
+
+}
+
+}
+
+
+
+.card-top {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: .25rem;
+}
+
+.item img {
+  width: 64px;
+}
+
+.item {
+  margin: 0px 15px;
+  text-align: center;
+}
+
+.item a:hover {
+  color: blue;
+}
+
+.card {
+  padding: 20px;
+  margin: 50px;
+}
+
+.card img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 15px;
+  transition: 0.3s ease-out;
+}
+
+.card img:hover {
+  transition: 0.3s ease-out;
+  transform: scale(1.1);
+}
+
+}
+
+
+@media only screen and  (max-width:768px){
+
+  main{
+    .all-Products{
+      position: relative;
+      height: 20rem;
+      width: 100%;
+      background: blueviolet;
+      overflow: hidden;
+      box-sizing: border-box;
+      cursor: pointer;
+
+
+    .option1{
+      display: inline-flex;
+      padding: 40rem;
+      padding-right: 10rem;
+      padding-top: .2rem;
+      float: right;
+
+  .devices{
+
+    overflow: hidden;
+    position: absolute;
+    box-sizing: border-box;
+    background-image: url('https://cdn-icons-png.flaticon.com/128/262/262209.png');
+    background-position: center;
+    background-size: cover;
+    margin-left:-30rem;
+    margin-top:.5rem;
+    height:100px;
+    width:100px;
+    display: inline-block;
+    background-size: cover;
+  }
+
+
+
+  .clothes{
+    position: absolute;
+    box-sizing: border-box;
+    overflow: hidden;
+    // margin-top:10rem;
+    height: 100px;
+    display: inline-flex;
+    width: 100px;
+    // margin-left:-14rem;
+    margin-top:.5rem;
+    margin-left: -22rem;
+  }
+
+
+  .decoration{
+    position: absolute;
+    overflow: hidden;
+    box-sizing: border-box;
+    // margin-top:20rem;
+    margin-top:.5rem;
+    height: 100px;
+    width: 100px;
+    margin-left: -7rem;
+  }
+
+
+ .perfumes{
+  position: absolute;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-image:url('https://images.bewakoof.com/image/content/2023/05/16114423/image-119.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height:100px;
+  width:100px;
+  margin-top:.5rem;
+  margin-left:2%;
+ }
+
+ .snacks{
+  position: absolute;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-image: url('https://i.pinimg.com/236x/b7/67/68/b7676807cd0b07bb6bc65e79fe998995.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+  display: inline-flex;
+  // margin-top: 40rem;
+margin-top:10rem;
+  margin-left:-30rem;
+}
+
+.groceries{
+  position: absolute;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-image: url('https://i.pinimg.com/236x/31/db/b4/31dbb447b58e35ba6889c4a700bdfcfe.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+  margin-top:10rem;
+margin-left: -22rem;
+}
+
+
+.gift{
+  position: absolute;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-image: url('https://i.pinimg.com/236x/30/ec/05/30ec05daa2dbee7206835794f3065ac3.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top:10rem;
+  margin-left: -14rem;
+}
+
+
+.wrist-watch{
+  position: absolute;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-top:10rem;
+  margin-left: -7rem;
+}
+
+
+
+.stationary{
+  position: absolute;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-top:.5rem;
+  margin-left: -14rem;
+}
+
+
+.footwear{
+  position: absolute;
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 90px;
+  width: 90px;
+  background-image: url('https://i.pinimg.com/564x/ca/7f/2f/ca7f2f28db5cb465f6e30f29d40b7507.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding:.8rem;
+  padding-top:1rem;
+  border-radius: 50%;
+  border: none;
+  padding-top: 1rem;
+  margin-left:3%;
+  margin-top:10rem;
+}
+
+ .para1{
+   position: absolute;
+   overflow: hidden;
+   box-sizing: border-box;
+   margin-top:7rem;
+  //  text-align: center;
+  margin-left:-31rem;
+  padding-top:.5rem;
+  font-size:.7rem;
+
+   color: #fff;
+  }
+
+  .para2{
+    position: absolute;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-top:7.5rem;
+    margin-left:-21rem;
+    color: #fff;
+    font-size: .7rem;
+  }
+
+  .para3{
+    position: absolute;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-top:7.5rem;
+    margin-left:-7rem;
+    font-size: .7rem;
+    color: #fff;
+  }
+  .para4{
+    position: absolute;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-top:7.5rem;
+    margin-left:3%;
+    font-size: .7rem;
+    color: #fff;
+  }
+
+  .para5{
+    position: absolute;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-top:17rem;
+    margin-left:-31rem;
+    font-size: .7rem;
+    color: #fff;
+  }
+
+  .para6{
+    position: absolute;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-top:17rem;
+    margin-left:-23rem;
+    color: #fff;
+    font-size: .7rem;
+  }
+
+
+  .para7{
+    position: absolute;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-top:17rem;
+    margin-left:-13rem;
+    color: #fff;
+    font-size: .7rem;
+  }
+
+  .para8{
+    position: absolute;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-top:17rem;
+    margin-left:-7rem;
+    color: #fff;
+    font-size: .7rem;
+  }
+  .para9{
+    position: absolute;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-top:7.5rem;
+    margin-left:-14rem;
+    font-size: .7rem;
+    color: #fff;
+  }
+
+  .para10{
+    position: absolute;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-top:17rem;
+    margin-left:5%;
+    font-size: .7rem;
+    color: #fff;
+  }
+}
+
+  }
+  }
+}
+
+
+
+
+
+
+
